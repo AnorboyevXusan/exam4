@@ -1,0 +1,83 @@
+@use "../utils/variables" as var;
+
+@mixin btn($padding: 24px 64px, $bg-color: var.$c2, $color: #1c1d28) {
+  padding: $padding;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  background-color: $bg-color;
+  color: $color;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+@mixin primary-btn {
+  @include btn;
+
+  &:hover {
+    background: #f2c79b;
+  }
+}
+
+@mixin secondary-btn {
+  @include btn(24px 64px, var.$c1, var.$c2);
+  backdrop-filter: blur(40px);
+
+  &:hover {
+    color: var.$c5;
+  }
+}
+
+@mixin nav-btn {
+  @include btn(20px 48px);
+
+  &:hover {
+    background: #f2c79b;
+  }
+}
+
+@mixin title($size, $weight, $height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  text-transform: uppercase;
+}
+
+@mixin title-h1 {
+  @include title(var.$h1, 700, 82px);
+  font-family: "RobotoC-700";
+
+  letter-spacing: -0.48px;
+}
+@mixin title-h2 {
+  @include title(var.$h2, 700, 64px);
+  font-family: "RobotoC-700";
+  letter-spacing: -0.48px;
+}
+
+@mixin title-h6 {
+  @include title(var.$h6, 400, normal);
+  font-family: "RobotoC-400";
+}
+
+@mixin item-p {
+  font-family: "Roboto-400";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(22, 23, 34, 1);
+}
+@mixin item-h4 {
+  font-family: "RobotoC-700";
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: rgba(22, 23, 34, 1);
+}
+
+@mixin title-p{
+  @include title(var.$p,400, normal)
+}
