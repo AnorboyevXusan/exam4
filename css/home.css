@@ -91,6 +91,53 @@ main {
   letter-spacing: -0.48px;
 }
 
+.loaders {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #000000;
+  z-index: 9999800001;
+}
+.loaders .loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.d-nonee {
+  display: none;
+}
+
+.backtop-show {
+  display: block;
+  background-color: #70C05B;
+  padding: 8px;
+  border-radius: 30px;
+  position: fixed;
+  right: 16px;
+  bottom: 65px;
+  z-index: 100000;
+}
+@media screen and (max-width: 1100px) {
+  .backtop-show {
+    display: block;
+  }
+}
+
 .header {
   position: fixed;
   width: 100%;

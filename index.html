@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="css/home.min.css" />
   </head>
   <body>
+    <div class='loaders'>
+      <span class='loader'></span>
+    </div>
+    <button id="backtop" class="d-nonee">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 8.64645C5.84171 8.45118 6.15829 8.45118 6.35355 8.64645L12 14.2929L17.6464 8.64645C17.8417 8.45118 18.1583 8.45118 18.3536 8.64645C18.5488 8.84171 18.5488 9.15829 18.3536 9.35355L12.3536 15.3536C12.1583 15.5488 11.8417 15.5488 11.6464 15.3536L5.64645 9.35355C5.45118 9.15829 5.45118 8.84171 5.64645 8.64645Z" fill="#414141"/>
+      </svg>
+    </button>
     <header class="header" id="navbar">
       <div class="container header__container">
         <div class="header__logo">
@@ -750,22 +758,22 @@
               <img src="images/foologo.svg" alt="a">
             </li>
             <li>
-              <a href="£">
+              <a href="pages/Окомпании.html">
                 О компании
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="">
                 Контакты
               </a>
             </li>
            <li>
-            <a href="#">
+            <a href="pages/vakansiya.html">
               Вакансии
             </a>
            </li>
            <li>
-            <a href="#">
+            <a href="pages/articls.html">
               Статьи
             </a>
            </li>
@@ -793,7 +801,7 @@
       </div>
     </footer>
     <section class="nav-footer">
-      <!-- <div class="container"> -->
+      
         <div class="nav-footer__content">
           <ul>
             <li>
@@ -809,9 +817,14 @@
             </li>
           </ul>
         </div>
-      <!-- </div> -->
+      
     </section>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js">
+      const loader = document.querySelector('.loaders')
+        setTimeout(() => {
+          loader.style.display = 'none'
+        }, 2000)
+    </script>
   </body>
 </html>
