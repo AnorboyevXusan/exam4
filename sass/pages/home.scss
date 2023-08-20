@@ -538,7 +538,6 @@ button {
       width: 385px;
       padding: 5px;
       @media (max-width:800px){
-       width: 300px;
        img{
         width: 100%;
        } 
@@ -550,7 +549,7 @@ button {
         } 
        }
        @media (max-width:600px){
-        width: 355px;
+        width: 255px;
         img{
          width: 100%;
         } 

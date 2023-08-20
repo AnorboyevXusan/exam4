@@ -642,9 +642,6 @@ main {
   padding: 5px;
 }
 @media (max-width: 800px) {
-  .stati .stati__box .stati__box-cart {
-    width: 300px;
-  }
   .stati .stati__box .stati__box-cart img {
     width: 100%;
   }
@@ -659,7 +656,7 @@ main {
 }
 @media (max-width: 600px) {
   .stati .stati__box .stati__box-cart {
-    width: 355px;
+    width: 255px;
   }
   .stati .stati__box .stati__box-cart img {
     width: 100%;
