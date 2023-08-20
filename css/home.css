@@ -120,6 +120,12 @@ main {
   justify-content: space-between;
   flex-grow: 1;
 }
+@media (max-width: 860px) {
+  .header .header__container .nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .header .header__container .nav .nav__list {
   display: flex;
   gap: 48px;
@@ -687,5 +693,6 @@ main {
   align-items: center;
   position: fixed;
   width: 100%;
-  bottom: 0px;
+  margin: 0 auto;
+  bottom: 0;
 }
