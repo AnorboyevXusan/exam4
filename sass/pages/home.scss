@@ -27,10 +27,10 @@
 
     .header__logo {
       height: 100%;
-      padding-right: 66px;
       display: flex;
       align-items: center;
       border-right: 1px solid rgba(255, 255, 255, 0.20000000149011612);
+      gap: 20px;
     }
     .nav {
       display: flex;
@@ -348,19 +348,25 @@
       align-items: center;
       background-color: #E5FFDE;
      @media (max-width:650px){
-        width: 300px;
+        width: 350px;
         grid-template-columns: 1fr ;
+        .immmm{
+          width: 100%;
+        }
         img{
           width: 100%;
         }  
   }
-  
+      
       h4{
         color: #414141;
         font-family: Rubik;
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
+        @media (max-width:390px){
+          font-size: 18px;  
+    }
       }
       p{
         color: #414141;
@@ -369,8 +375,24 @@
         font-style: normal;
         font-weight: 400;
       }
+      @media (max-width:390px){
+        width: 250px;
+        grid-template-columns: 1fr ;
+        img{
+          width: 100%;
+        }  
+  }
       
     }
+    @media (max-width:390px){
+      width: 250px;
+
+      grid-template-columns: 1fr ;
+      img{
+        width: 100%;
+      }  
+}
+
     :hover {
        background-color:#FCD5BA ; 
        
@@ -470,7 +492,7 @@ button {
       width: 385px;
       padding: 5px;
       @media (max-width:800px){
-       width: 250px;
+       width: 300px;
        img{
         width: 100%;
        } 
@@ -482,7 +504,7 @@ button {
         } 
        }
        @media (max-width:600px){
-        width: 305px;
+        width: 355px;
         img{
          width: 100%;
         } 
@@ -501,6 +523,9 @@ button {
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
+        @media (max-width:600px){
+          font-size: 16px;
+         }
       }
       p{
         margin-top: 10px;

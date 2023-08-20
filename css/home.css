@@ -108,10 +108,10 @@ main {
 }
 .header .header__container .header__logo {
   height: 100%;
-  padding-right: 66px;
   display: flex;
   align-items: center;
   border-right: 1px solid rgba(255, 255, 255, 0.2000000015);
+  gap: 20px;
 }
 .header .header__container .nav {
   display: flex;
@@ -440,8 +440,11 @@ main {
 }
 @media (max-width: 650px) {
   .special .special__box-cart .special__box-cart-ul {
-    width: 300px;
+    width: 350px;
     grid-template-columns: 1fr;
+  }
+  .special .special__box-cart .special__box-cart-ul .immmm {
+    width: 100%;
   }
   .special .special__box-cart .special__box-cart-ul img {
     width: 100%;
@@ -454,12 +457,35 @@ main {
   font-style: normal;
   font-weight: 700;
 }
+@media (max-width: 390px) {
+  .special .special__box-cart .special__box-cart-ul h4 {
+    font-size: 18px;
+  }
+}
 .special .special__box-cart .special__box-cart-ul p {
   color: #414141;
   font-family: Rubik;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+}
+@media (max-width: 390px) {
+  .special .special__box-cart .special__box-cart-ul {
+    width: 250px;
+    grid-template-columns: 1fr;
+  }
+  .special .special__box-cart .special__box-cart-ul img {
+    width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .special .special__box-cart {
+    width: 250px;
+    grid-template-columns: 1fr;
+  }
+  .special .special__box-cart img {
+    width: 100%;
+  }
 }
 .special .special__box-cart :hover {
   background-color: #FCD5BA;
@@ -570,7 +596,7 @@ main {
 }
 @media (max-width: 800px) {
   .stati .stati__box .stati__box-cart {
-    width: 250px;
+    width: 300px;
   }
   .stati .stati__box .stati__box-cart img {
     width: 100%;
@@ -586,7 +612,7 @@ main {
 }
 @media (max-width: 600px) {
   .stati .stati__box .stati__box-cart {
-    width: 305px;
+    width: 355px;
   }
   .stati .stati__box .stati__box-cart img {
     width: 100%;
@@ -606,6 +632,11 @@ main {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
+}
+@media (max-width: 600px) {
+  .stati .stati__box .stati__box-cart h4 {
+    font-size: 16px;
+  }
 }
 .stati .stati__box .stati__box-cart p {
   margin-top: 10px;
