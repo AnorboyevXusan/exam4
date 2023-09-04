@@ -1,0 +1,29 @@
+@use "../global";
+@use "../components/upcoming-sermon";
+@use "../components/blog-card";
+@use "../components/section-header";
+@use "../utils/functions" as func;
+@use "../utils/placeholders";
+@use "../layout/container";
+@use "../base/typography";
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mxn;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+
+.hero{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #FBF8EC;
+  .hero__titule{
+    margin-top: 40px;
+    h1{
+      color:  #414141;
+      font-family: Rubik;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+    }
+   }
+}
+
