@@ -51,10 +51,49 @@ function shrink() {
   }
 }
 
-// const loader = document.querySelector('.loaders')
-// setTimeout(() => {
-//   loader.style.display = 'none'
-// }, 2000)
+
+let toggle = document.querySelector("nav .toggle");
+let close = document.querySelector(".close");
+let menu = document.querySelector(".menu");
+let header = document.querySelector("header");
+let loginBtn = document.querySelector(".login");
+let closeBtn = document.querySelector(".modal-close");
+let modal = document.querySelector(".modal");
+let modalContent = document.querySelector(".modal-content");
+
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("menu-show");
+});
+
+close.addEventListener("click", () => {
+  menu.classList.remove("menu-show");
+});
+
+window.addEventListener("scroll", () => {
+  if (scrollY >= 300) {
+    header.classList.add("navbar-shrink");
+  } else {
+    header.classList.remove("navbar-shrink");
+  }
+});
+
+loginBtn.addEventListener("click", () => {
+  modal.classList.add("modal-show");
+  modalContent.classList.add("modal-content-show");
+});
+
+closeBtn.addEventListener("click", () => closeModal());
+
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
+
+function closeModal() {
+  modal.classList.remove("modal-show");
+  modalContent.classList.remove("modal-content-show");
+}
 
 
 
